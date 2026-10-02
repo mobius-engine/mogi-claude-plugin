@@ -1,0 +1,10 @@
+{
+  "name": "mogi",
+  "displayName": "Mogi",
+  "version": "1.0.0",
+  "description": "Run your Mogi job search from Claude: review and approve the jobs Mogi finds, tune your saved searches, manage resumes and settings, finish setup, and follow your applications and interviews.",
+  "author": { "name": "Mobius Services LLC", "email": "support@mobiusengine.ai", "url": "https://jobagent.mobiusengine.ai" },
+  "homepage": "https://jobagent.mobiusengine.ai/docs",
+  "license": "LicenseRef-Mobius",
+  "keywords": ["jobs", "job search", "job applications", "auto apply", "resume", "interviews"]
+}

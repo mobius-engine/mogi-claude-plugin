@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mogi": {
+      "type": "http",
+      "url": "https://jobagent-api.mobiusengine.ai/mcp"
+    }
+  }
+}
