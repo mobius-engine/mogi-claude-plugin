@@ -13,11 +13,11 @@ metadata:
    Other stages: `applying` (queued), `not_applied` (Mogi could not apply), `got_no`.
 2. Interviews: `list_interviews`. Locked interviews show only company and role; they are opened
    in the Mogi app. When the user says an interview happened, call
-   `mark_interview_done`. To record an employer's no on a job, `mark_job_outcome`.
+   `update_interview` (`done`; it also archives and keeps the user's notes). To record an employer's no on a job, `mark_job_outcome`.
 3. Questions on a job: `list_jobs` with stage `more_info`, read the notes with `get_job`, and
    reply with the user's own answer via `answer_job_question`.
-4. Messages: `get_support_messages`; send with `send_support_message` after confirming the
-   wording.
+4. Messages: `get_support_messages` reads the old support thread. Sending is closed: do the
+   thing the user wants with the other tools instead.
 5. Job emails: `list_emails`, then `read_email_thread` for one conversation. Summarize what the
    employer wants and any dates.
 

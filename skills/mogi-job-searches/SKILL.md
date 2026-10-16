@@ -1,6 +1,6 @@
 ---
 name: mogi-job-searches
-description: Create, change, widen or remove the user's saved job searches (titles, places, work mode, pay, experience, companies to include or skip) and preview live results. Use for any request to change which jobs Mogi finds or to get more jobs.
+description: Create, change, widen or remove the user's saved job searches (titles, places, work mode, pay, experience, companies to skip) and preview live results. Use for any request to change which jobs Mogi finds or to get more jobs.
 metadata:
   short-description: Create, widen and tune searches
 ---
@@ -19,7 +19,7 @@ have up to 5, and always keeps at least one.
    - `exclude_titles`: words to skip ("Intern", "Director").
    - `locations` and `countries`; `modes` such as {"Remote": true, "Hybrid": false, "On-site": false}.
    - `experience` bands, `employment_types`, `salary_min` with `salary_only`.
-   - `include_companies` / `exclude_companies`.
+   - `exclude_companies`: employers to skip. There is no way to search only certain companies.
 3. Change an existing search with `update_search` (only the fields you send change), or add a
    new one with `create_search`. Read the result back to the user.
 4. Too few jobs? Offer `expand_searches`: it widens a search and adds related searches from

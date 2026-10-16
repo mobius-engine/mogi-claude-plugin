@@ -8,14 +8,15 @@ conversation.
 
 - **The Mogi connector**, a remote MCP server at `https://jobagent-api.mobiusengine.ai/mcp`.
   It acts only on the signed-in user's own Mogi account.
-- **Seven skills** that teach Claude the common workflows:
+- **Eight skills** that teach Claude the common workflows:
   - Get started: an overview of the account and what is waiting.
   - Setup: finish setting up Mogi in chat, from resume upload to going live.
   - Review jobs: see the jobs Mogi found and approve or pass on them.
   - Job searches: create, change, widen or remove saved searches.
-  - Resumes: upload, approve, edit and choose the default resume.
-  - Settings: auto-approve, tailoring, application answers, email preferences, pause or resume.
-  - Progress: applications submitted, interviews, questions on a job and job emails.
+  - Resumes: upload, edit with AI, go back a version and choose the default resume.
+  - Resume rebuild: answer ten questions about your work, then review and approve the rebuilt resume.
+  - Settings: auto-approve, resume customization (Heavy, Light or My own), the cover letter, application answers, email preferences, pause or resume.
+  - Progress: applications submitted, interviews, questions on a job, support messages and job emails.
 
 ## Use it
 

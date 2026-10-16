@@ -28,7 +28,8 @@ automatically. These tools manage the user's own Mogi account.
 
 - Reviewing and approving new jobs (mogi-review-jobs)
 - Tuning saved searches (mogi-job-searches)
-- Resumes and tailored documents (mogi-resumes)
+- Resumes, cover letters and tailored documents (mogi-resumes)
+- The required resume rebuild that lets Mogi apply (mogi-resume-rebuild)
 - Settings, pausing applying, profile answers (mogi-settings)
 - Following applications, interviews, messages and job emails (mogi-progress)
 - Finishing setup (mogi-setup)

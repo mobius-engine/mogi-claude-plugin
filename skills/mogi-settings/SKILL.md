@@ -1,6 +1,6 @@
 ---
 name: mogi-settings
-description: Change how Mogi runs for the user (auto-approve, tailored resumes and cover letters, review before use, email preferences), pause or resume all applications, and update the profile answers used on application forms.
+description: Change how Mogi runs for the user (auto-approve, resume customization Heavy / Light / My own, the cover letter, email preferences), pause or resume all applications, and update the profile answers used on application forms.
 metadata:
   short-description: Auto-approve, pausing, emails, profile
 ---
@@ -10,10 +10,17 @@ metadata:
 ## Settings
 
 1. Call `get_settings` and explain the current choices in plain words using `meaning`.
+   `resume_customization` is what the user sees in the app: Heavy, Light or My own.
 2. Change with `update_settings`:
-   - `job_auto_approve`: off (user approves every job), high_fit (strong matches approved
-     automatically), all (every job approved). Job approval and document review move together.
-   - `custom_resume_opt_in`, `resume_creativity`, `generate_cover_letter`.
+   - `job_auto_approve`: high_fit (strong matches approved automatically, the rest wait for
+     the user) or all (every job approved). Approving every job by hand can no longer be
+     chosen. This is about jobs only: resumes are never held for review.
+   - Resume customization: Heavy = `resume_creativity` medium (the default and most
+     interviews, AI may add or change details), Light = `low` (small edits), My own =
+     `custom_resume_opt_in` false (their file, unchanged). Use the words Heavy, Light and My
+     own with the user.
+   - `generate_cover_letter`: one cover letter, written once from their resume, goes with
+     every application.
 3. Report anything in `not_applied`.
 4. Emails: `update_email_preferences` (categories, daily cap, digest cadence, or unsubscribe all).
 
